@@ -1,7 +1,12 @@
-AOS.init({
-  duration: 800,
-  once: true,
-  offset: 80
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({
+    duration: 700,
+    once: true,
+    offset: 60,
+    disable: function () {
+      return window.innerWidth < 768;
+    }
+  });
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();

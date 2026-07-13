@@ -649,4 +649,51 @@ blockquote {
   .testimonial-card p {
     font-size: 1.12rem;
   }
+
+  @media (max-width: 767.98px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  }
+
+  .display-title {
+  min-height: 2.15em;
+  }
+
+  @media (max-width: 575.98px) {
+  .display-title {
+    min-height: 3.15em;
+    line-height: 1.04;
+  }
+  }
+
+  @media (max-width: 575.98px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 115px;
+    padding-bottom: 65px;
+  }
+
+  .hero-art {
+    min-height: auto;
+  }
+
+  .hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 536 / 400;
+    object-fit: cover;
+    border-radius: 42% 42% 6px 6px;
+  }
+
+  .gold-circle {
+    width: 72vw;
+    height: 72vw;
+    max-width: 280px;
+    max-height: 280px;
+  }
+  } 
 }
